@@ -1,0 +1,119 @@
+footer {
+    .links-container {
+        @media #{$small} {
+            padding: 50px 100px;
+        }
+        position: relative;
+        top: 50px;
+        padding: 50px 20px;
+        background-color: $footer-bg;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 6px;
+        .main-links {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    margin-bottom: 30px;
+                    a {
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: $main-color;
+                    }
+
+                }
+            }
+        }
+        .youcan-links {
+            text-align: center;
+            margin-bottom: 35px;
+            h4 {
+                margin-bottom: 40px;
+                a {
+                    display: block;
+                    font-size: 30px;
+                    font-weight: bold;
+                    color: $main-color
+                }
+            }
+            ul {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                & > li {
+                    font-size: 18px;
+                    color: $main-color;
+                    font-weight: bold;
+                    text-align: center;
+                    ul {
+                        margin-bottom: 20px;
+                        li {
+                            margin-top: 20px;
+                            a {
+                                color: $text-color;
+                                &:hover {
+                                    color: $main-color;
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+        .social-media {
+            text-align: center;
+            h4 {
+                font-size: 20px;
+                color: $main-color;
+                font-weight: bold;
+                margin-bottom: 25px;
+            }
+            a {
+                color: $main-color;
+                margin-right: 15px;
+                opacity: .7;
+                i {
+                    font-size: 24px;
+                }
+                &:hover {
+                    opacity: 1;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .download-app {
+        padding: 120px 20px 60px 20px;
+        background-color: $main-color;
+        text-align: center;
+        h4 {
+            font-size: 18px;
+            color: $white-color;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+        img {
+            border-radius: 6px;
+            margin-right: 10px;
+            cursor: pointer;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .copy-right {
+        text-align: center;
+        padding: 20px;
+        p {
+            font-size: 15px;
+            a {
+                color: $main-color;
+            }
+        }
+    }
+}

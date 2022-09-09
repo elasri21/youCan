@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import './var';
+//vars
+$body-bg: #f5f3f3;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-family: $family;
+    background-color: $body-bg;
+}
+.container {
+    text-align: center;
+    margin-top: 30px;
+    h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+        a {
+            color: $main-color;
+        }
+    }
+    & > p {
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    form {
+        @media #{$small} {
+            width: 500px;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+        padding: 20px;
+        border: 1px solid $gray-text;
+        border-radius: 6px;
+        background-color: $white-color;
+        margin-left: 30px;
+        margin-right: 30px;
+        p {
+            margin-bottom: 20px;
+            position: relative;
+            span {
+                position: absolute;
+                top: 13px;
+                color: $main-color;
+                right: 40px;
+            }
+            i {
+                position: absolute;
+                right: 10px;
+                top: 17px;
+                color: $gray-text;
+                &.hide-pass {
+                    display: none;
+                    cursor: pointer;
+                }
+                &.show-pass {
+                    cursor: pointer;
+                }
+                &.circle-mark {
+                    right: unset;
+                    left: 10px;
+                    color: rgb(247, 116, 116);
+                }
+            }
+            input {
+                width: 100%;
+                padding: 15px 20px;
+                border-radius: 4px;
+                outline: none;
+                font-size: 15px;
+                font-weight: 600;
+                transition: all.3s ease-in-out;
+                &::placeholder {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $gray-text;
+                }
+                &.field-input {
+                    border: 1px solid $gray-text;
+                    &:focus {
+                        border-width: 2px;
+                        border-color: $main-color;
+                    }
+                    &.with-ex-pad {
+                        padding-left: 30px;
+                    }
+                }
+
+                &.login {
+                    border: none;
+                    color: $white-color;
+                    background-color: $main-color;
+                    border: 1px solid $main-color;
+                    &:hover {
+                        background-color: $white-color;
+                        color: $main-color;
+                    }
+                }
+            }
+            &.forget {
+                text-align: right;
+                a {
+                    font-size: 14px;
+                    color: $main-color;
+                    font-weight: 400;
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .not-yet {
+        @media #{$small} {
+            width: 500px;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p {
+                margin-right: 10px;
+                margin-bottom: 0 !important;
+            }
+        }
+        padding: 20px;
+        border: 1px solid $gray-text;
+        border-radius: 6px;
+        background-color: $white-color;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 25px;
+        p {
+            font-size: 15px;
+             font-weight: 400;
+             margin-bottom: 15px;
+        }
+        a {
+            color: $main-color;
+            font-weight: 400;
+        }
+    }
+}

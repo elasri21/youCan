@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/sign.css">
+    <title>Log in to manage your store</title>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="#">YouCan</a></h1>
+        <p>Log in to manage your store</p>
+        <form action="#">
+            <p>
+                <input type="text" name="domin" placeholder="Slug" id="domin" class="field-input">
+                <span>.youcan.shop</span>
+                <i class="fa-solid fa-circle-exclamation"></i>
+            </p>
+            <p>
+                <input type="email" name="email" placeholder="Email" id="sign-email" class="field-input">
+                <i class="fa-regular fa-envelope"></i>
+            </p>
+            <p>
+                <input type="password" name="password"  placeholder="Password" id="password" class="field-input">
+                <i class="fa-solid fa-eye show-pass"></i>
+                <i class="fa-solid fa-eye-slash hide-pass"></i>
+            </p>
+            <p class="forget"><a href="#">Forget password?</a></p>
+            <p>
+                <input type="submit" id="login" class="login">
+            </p>
+        </form>
+        <div class="not-yet">
+            <p>Not yet registered?</p>
+            <a href="#">Create your store</a>
+        </div>
+    </div>
+</body>
+</html>

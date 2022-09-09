@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f5f3f3;
+}
+
+.container {
+  text-align: center;
+  margin-top: 30px;
+}
+.container h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.container h1 a {
+  color: #752651;
+}
+.container > p {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+.container form {
+  padding: 20px;
+  border: 1px solid #9d9898;
+  border-radius: 6px;
+  background-color: #fff;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+@media (min-width: 768px) {
+  .container form {
+    width: 500px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+.container form p {
+  margin-bottom: 20px;
+  position: relative;
+}
+.container form p span {
+  position: absolute;
+  top: 13px;
+  color: #752651;
+  right: 40px;
+}
+.container form p i {
+  position: absolute;
+  right: 10px;
+  top: 17px;
+  color: #9d9898;
+}
+.container form p i.hide-pass {
+  display: none;
+  cursor: pointer;
+}
+.container form p i.show-pass {
+  cursor: pointer;
+}
+.container form p i.circle-mark {
+  right: unset;
+  left: 10px;
+  color: #f77474;
+}
+.container form p input {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 4px;
+  outline: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.container form p input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9d9898;
+}
+.container form p input.field-input {
+  border: 1px solid #9d9898;
+}
+.container form p input.field-input:focus {
+  border-width: 2px;
+  border-color: #752651;
+}
+.container form p input.field-input.with-ex-pad {
+  padding-left: 30px;
+}
+.container form p input.login {
+  border: none;
+  color: #fff;
+  background-color: #752651;
+  border: 1px solid #752651;
+}
+.container form p input.login:hover {
+  background-color: #fff;
+  color: #752651;
+}
+.container form p.forget {
+  text-align: right;
+}
+.container form p.forget a {
+  font-size: 14px;
+  color: #752651;
+  font-weight: 400;
+}
+.container form p:last-child {
+  margin-bottom: 0;
+}
+.container .not-yet {
+  padding: 20px;
+  border: 1px solid #9d9898;
+  border-radius: 6px;
+  background-color: #fff;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 25px;
+}
+@media (min-width: 768px) {
+  .container .not-yet {
+    width: 500px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .not-yet p {
+    margin-right: 10px;
+    margin-bottom: 0 !important;
+  }
+}
+.container .not-yet p {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.container .not-yet a {
+  color: #752651;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=sign.css.map */

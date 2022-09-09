@@ -1,0 +1,225 @@
+.top-section {
+    @media #{$small} {
+        padding: 100px 50px !important;
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left-sec {
+            width: 55%;
+        }
+        .right-sec {
+            width: 40%;
+        }
+    }
+    @media #{$mobile} {
+        text-align: center;
+    }
+    margin-top: 170px;
+    padding: 50px 20px;
+    background-color: $main-color;
+    .left-sec {
+        margin-bottom: 30px;
+    }
+    h2 {
+        font-size: 28px;
+        color: $white-color;
+        font-weight: 700;
+        margin-bottom: 30px;
+        p {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+    }
+    p {
+        color: $white-color;//to be continue
+    }
+    h3 {
+        font-size: 28px;
+        color: $white-color;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .player {
+        width: 80px;
+        height: 80px;
+        background-color: $white-color;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+        i {
+            font-size: 30px;
+            color: purple;
+        }
+    }
+}
+
+.features {
+    padding: 50px 20px;
+    h2 {
+        text-align: center;
+        font-size: 30px;
+        color: $black-color;
+        margin-bottom: 30px;
+        p {
+            font-size: 15px;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+    }
+    .our-features {
+        @media #{$grid-1} {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            br {
+                display: none;
+            }
+        }
+        @media #{$grid-2} {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            br {
+                display: none;
+            }
+        }
+        .feature {
+            text-align: center;
+            padding: 20px;
+            i {
+                font-size: 30px;
+                color: $main-color
+            }
+            h3 {
+                font-size: 24px;
+                font-weight: 700;
+                color: $black-color;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                color: $text-color;
+                margin-bottom: 20px;
+                a {
+                    display: block;
+                    color: $main-color;
+                    margin-top: 10px;
+
+                }
+            }
+        }
+    }
+}
+.faq {
+    padding: 50px 20px 0 20px;
+    background-color: $main-color;
+    position: relative;
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100px;
+        background-color: $white-color;
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+    }
+    h2 {
+        text-align: center;
+        font-size: 30px;
+        color: $white-color;
+        margin-bottom: 50px;
+        p {
+            font-size: 16px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+    }
+    .container {
+        position: relative;
+        z-index: 11;
+        padding: 20px;
+        background-color: $white-color;
+        border-radius: 20px;
+        box-shadow: 0px 1px 5px $gray-text;
+        .questions {
+            @media #{$grid-1} {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 15px;
+                br {
+                    display: none;
+                }
+                .question {
+                    margin-bottom: 0 !important;
+                }
+            }
+            @media #{$grid-2} {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 15px;
+                br {
+                    display: none;
+                }
+                .question {
+                    margin-bottom: 0 !important;
+                }
+            }
+            .question {
+                margin-bottom: 20px;
+                border: 1px solid $gray-text;
+                border-radius: 15px;
+                box-shadow: 1px 1px 5px $gray-text, -1px -1px 5px $gray-text;
+                h3 {
+                    padding: 15px;
+                    border-bottom: 1px solid $gray-text;
+                    font-size: 20px;
+                    color: $black-color;
+                    font-weight: 700;
+                }
+                p {
+                    padding: 15px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $text-color;
+                }
+            }
+        }
+    }
+
+}
+.open-store {
+    text-align: center;
+    padding: 50px 20px;
+    h2 {
+        font-size: 34px;
+        font-weight: 700;
+        color: $black-color;
+        margin-bottom: 20px;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+    .illus {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 100%;
+        }
+    }
+    form {
+        .email {
+            border: 1px solid $gray-text;
+            border-bottom: none;
+            box-shadow: 0px 1px 5px $gray-text;
+        }
+    }
+}
