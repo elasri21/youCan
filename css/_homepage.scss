@@ -53,9 +53,16 @@
         margin-left: auto;
         margin-right: auto;
         cursor: pointer;
+        animation: cover 3s infinite;
         i {
             font-size: 30px;
             color: purple;
+        }
+    }
+
+    @keyframes cover {
+        50% {
+            background-color: $light-bg;
         }
     }
 }

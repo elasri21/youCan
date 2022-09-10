@@ -168,7 +168,7 @@ header nav > ul li ul {
 header nav > ul li ul li {
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 header nav > ul li ul li a {
   color: #9d9898;
@@ -237,12 +237,17 @@ header nav > ul li:hover ul {
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
+  animation: cover 3s infinite;
 }
 .top-section .player i {
   font-size: 30px;
   color: purple;
 }
-
+@keyframes cover {
+  50% {
+    background-color: #9c7a9c;
+  }
+}
 .features {
   padding: 50px 20px;
 }
